@@ -1,8 +1,15 @@
 {
-    "name": "Cancerbot",
-    "version": "1.0.0",
-    "description": "He's toxic, report him",
-    "main": "bot.js",
-    "author": "Ratouney",
-    "dependencies": {}
+  "name": "Cancerbot",
+  "version": "1.0.0",
+  "description": "He's toxic, report him",
+  "main": "bot.js",
+  "repository": "https://github.com/ratouney/cancerbot",
+  "author": "Jean Pignouf <ratouney1998@gmail.com>",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.3.2",
+    "winston": "^2.4.1"
   }
+}
