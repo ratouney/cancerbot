@@ -2,25 +2,35 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 const prefix = '!';
+let trashThisGuy = null;
 
 client.on("ready", (message) => {
   console.log("Connected to server");
 });
 
 client.on("message", (message) => {
+    if (trashThisGuy != null && message.author.id == trashThisGuy.user.id) {
+        message.channel.send("SHUT UP!");
+    }
+
     if (message.content.startsWith(prefix) == false) {
         return ;
     }
 
-    const mentionnned = message.mentions.members.first();
-    if (mentionnned != undefined) {
-        message.channel.send("Fuck you <@" + mentionnned.user.id + ">");
-        return ;
+    console.log("Trashing : ", trashThisGuy);
+    if (trashThisGuy != null) {
+        console.log(" ??? " + trashThisGuy.user.id + " == ", message.author.id)
     }
+
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
+    if (command == 'trash') {
+        trashThisGuy = message.mentions.members.first();
+        message.channel.send("Oh boi, you're done " + trashThisGuy);
+        return ;
+    }
     message.channel.send(command + " toi même pov con");
 
 });
