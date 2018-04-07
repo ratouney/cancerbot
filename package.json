@@ -1,0 +1,8 @@
+{
+    "name": "Cancerbot",
+    "version": "1.0.0",
+    "description": "He's toxic, report him",
+    "main": "bot.js",
+    "author": "Ratouney",
+    "dependencies": {}
+  }

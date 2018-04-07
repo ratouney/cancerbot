@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'discord.io',
+1 verbose cli   'winston' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json Cancerbot@1.0.0 No repository field.
+5 warn package.json Cancerbot@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'discord.io', null ]
+8 verbose cache add name=undefined spec="discord.io" args=["discord.io",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'discord.io',
+9 verbose parsed url   path: 'discord.io',
+9 verbose parsed url   href: 'discord.io' }
+10 verbose cache add [ 'winston', null ]
+11 verbose cache add name=undefined spec="winston" args=["winston",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'winston',
+12 verbose parsed url   path: 'winston',
+12 verbose parsed url   href: 'winston' }
+13 silly lockFile e19d7e66-discord-io discord.io
+14 verbose lock discord.io /home/ratouney/.npm/e19d7e66-discord-io.lock
+15 silly lockFile e2f3e36e-winston winston
+16 verbose lock winston /home/ratouney/.npm/e2f3e36e-winston.lock
+17 silly lockFile e19d7e66-discord-io discord.io
+18 silly lockFile e19d7e66-discord-io discord.io
+19 silly lockFile e2f3e36e-winston winston
+20 silly lockFile e2f3e36e-winston winston
+21 verbose addNamed [ 'discord.io', '' ]
+22 verbose addNamed [ null, '*' ]
+23 silly lockFile 5ac0d1b4-discord-io discord.io@
+24 verbose lock discord.io@ /home/ratouney/.npm/5ac0d1b4-discord-io.lock
+25 verbose addNamed [ 'winston', '' ]
+26 verbose addNamed [ null, '*' ]
+27 silly lockFile 9aa54492-winston winston@
+28 verbose lock winston@ /home/ratouney/.npm/9aa54492-winston.lock
+29 silly addNameRange { name: 'discord.io', range: '*', hasData: false }
+30 silly addNameRange { name: 'winston', range: '*', hasData: false }
+31 verbose url raw discord.io
+32 verbose url resolving [ 'https://registry.npmjs.org/', './discord.io' ]
+33 verbose url resolved https://registry.npmjs.org/discord.io
+34 info trying registry request attempt 1 at 11:37:34
+35 http GET https://registry.npmjs.org/discord.io
+36 verbose url raw winston
+37 verbose url resolving [ 'https://registry.npmjs.org/', './winston' ]
+38 verbose url resolved https://registry.npmjs.org/winston
+39 info trying registry request attempt 1 at 11:37:34
+40 http GET https://registry.npmjs.org/winston
+41 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+42 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+43 info trying registry request attempt 2 at 11:37:45
+44 http GET https://registry.npmjs.org/discord.io
+45 info trying registry request attempt 2 at 11:37:45
+46 http GET https://registry.npmjs.org/winston
+47 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+48 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+49 info trying registry request attempt 3 at 11:38:45
+50 http GET https://registry.npmjs.org/discord.io
+51 info trying registry request attempt 3 at 11:38:45
+52 http GET https://registry.npmjs.org/winston
+53 silly lockFile 5ac0d1b4-discord-io discord.io@
+54 silly lockFile 5ac0d1b4-discord-io discord.io@
+55 error Error: CERT_UNTRUSTED
+55 error     at SecurePair.<anonymous> (tls.js:1370:32)
+55 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+55 error     at SecurePair.maybeInitFinished (tls.js:982:10)
+55 error     at CleartextStream.read [as _read] (tls.js:469:13)
+55 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+55 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+55 error     at doWrite (_stream_writable.js:223:10)
+55 error     at writeOrBuffer (_stream_writable.js:213:5)
+55 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
+55 error     at write (_stream_readable.js:583:24)
+55 error     at flow (_stream_readable.js:592:7)
+55 error     at Socket.pipeOnReadable (_stream_readable.js:624:5)
+56 error If you need help, you may report this log at:
+56 error     <http://github.com/isaacs/npm/issues>
+56 error or email it to:
+56 error     <npm-@googlegroups.com>
+57 error System Linux 4.4.0-43-Microsoft
+58 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "discord.io" "winston"
+59 error cwd /mnt/c/Users/ratouney/coding/cancerbot
+60 error node -v v0.10.25
+61 error npm -v 1.3.10
+62 verbose exit [ 1, true ]
